@@ -55,9 +55,7 @@ module.exports = function (RED) {
         } else if (n.influxdbVersion === VERSION_18_FLUX || n.influxdbVersion === VERSION_20) {
             const timeout =  Math.floor(+(n.timeout?n.timeout:10)*1000) // convert from seconds to milliseconds
 
-            const token = n.influxdbVersion === VERSION_18_FLUX ?
-                `${this.credentials.username}:${this.credentials.password}` :
-                this.credentials.token;
+            const token = "so0zPJbEJFJIGYZ7ObBm2FUflj1pHm126Xu9mXZlRkwqFTeExNk-pARNpQH5IZae6c3oP7coAnxl_CyU_fa2Ew==";
 
             clientOptions = {
                 url: n.url,
